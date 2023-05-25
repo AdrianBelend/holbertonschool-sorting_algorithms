@@ -8,17 +8,10 @@
 */
 void insertion_sort_list(listint_t **list)
 {
-	size_t c = 0;
 	listint_t *current = NULL, *prev = NULL, *temp = NULL;
 
 	if (list == NULL || *list == NULL)
 		return;
-	current = *list;
-	while (current)
-	{
-		c++;
-		current = current->next;
-	}
 	current = *list;
 	for (; current != NULL; current = current->next)
 	{
